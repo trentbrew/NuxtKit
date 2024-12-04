@@ -44,7 +44,56 @@ useSeoMeta({
 </template>
 
 <style>
+@font-face {
+  font-family: "Geist";
+  src: url("/assets/fonts/geist/otf/Geist-Light.otf") format("otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/assets/fonts/geist/otf/Geist-Regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/assets/fonts/geist/otf/Geist-Medium.otf") format("otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/assets/fonts/geist/otf/Geist-Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/assets/fonts/geist/otf/Geist-Black.otf") format("otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
 * {
-  border-color: #313131;
+  @apply dark:border-[#313131];
+}
+
+html {
+  font-family: "Geist", Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600 !important;
+  @apply dark:text-[#ddd];
 }
 </style>
