@@ -1,29 +1,27 @@
 <script setup lang="ts">
-import { ChevronDown, Slash } from 'lucide-vue-next'
+import { ChevronDown, Slash } from "lucide-vue-next";
 
 const breadcrumbLinks = ref([
   {
-    title: 'Home',
-    href: '/',
+    title: "Home",
+    href: "/",
   },
   {
-    title: 'Components',
-    href: '#',
+    title: "Components",
+    href: "#",
   },
   {
-    title: 'Breadcrumb',
-    href: '/components/breadcrumb',
+    title: "Breadcrumb",
+    href: "/components/breadcrumb",
   },
-])
+]);
 </script>
 
 <template>
   <div class="flex flex-col gap-4">
     <BaseBreadcrumbCustom :links="breadcrumbLinks" />
     <div class="grid gap-2">
-      <h2 class="text-3xl font-bold tracking-tight">
-        Breadcrumb
-      </h2>
+      <h2 class="text-3xl font-bold tracking-tight">Breadcrumb</h2>
       <p class="text-muted-foreground">
         Displays the path to the current resource using a hierarchy of links.
       </p>
@@ -46,13 +44,13 @@ const breadcrumbLinks = ref([
           <CardTitle>Basic</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="h-100px w-full flex items-center justify-center gap-4 overflow-hidden sm:h-200px">
+          <div
+            class="h-100px w-full flex items-center justify-center gap-4 overflow-hidden sm:h-200px"
+          >
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/">
-                    Home
-                  </BreadcrumbLink>
+                  <BreadcrumbLink href="/"> Home </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
@@ -74,13 +72,13 @@ const breadcrumbLinks = ref([
           <CardTitle>Custom Separator</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="h-100px w-full flex items-center justify-center gap-4 overflow-hidden sm:h-200px">
+          <div
+            class="h-100px w-full flex items-center justify-center gap-3 overflow-hidden sm:h-200px"
+          >
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/">
-                    Home
-                  </BreadcrumbLink>
+                  <BreadcrumbLink href="/"> Home </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator>
                   <Slash />
@@ -106,13 +104,13 @@ const breadcrumbLinks = ref([
           <CardTitle>Dropdown</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="h-100px w-full flex items-center justify-center gap-4 overflow-hidden sm:h-200px">
+          <div
+            class="h-100px w-full flex items-center justify-center gap-4 overflow-hidden sm:h-200px"
+          >
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/">
-                    Home
-                  </BreadcrumbLink>
+                  <BreadcrumbLink href="/"> Home </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator>
                   <Slash />
@@ -146,14 +144,14 @@ const breadcrumbLinks = ref([
           <CardTitle>Collapsed</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="h-100px w-full flex items-center justify-center gap-4 overflow-hidden sm:h-200px">
+          <div
+            class="h-100px w-full flex items-center justify-center gap-4 overflow-hidden sm:h-200px"
+          >
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
                   <BreadcrumbLink as-child>
-                    <a href="/">
-                      Home
-                    </a>
+                    <a href="/"> Home </a>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
@@ -163,9 +161,7 @@ const breadcrumbLinks = ref([
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
                   <BreadcrumbLink as-child>
-                    <NuxtLink to="/components">
-                      Components
-                    </NuxtLink>
+                    <NuxtLink to="/components"> Components </NuxtLink>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
@@ -182,7 +178,9 @@ const breadcrumbLinks = ref([
           <CardTitle>Breadcrumb Custom</CardTitle>
         </CardHeader>
         <CardContent>
-          <div class="h-100px w-full flex items-center justify-center gap-4 overflow-hidden sm:h-200px">
+          <div
+            class="h-100px w-full flex items-center justify-center gap-4 overflow-hidden sm:h-200px"
+          >
             <BaseBreadcrumbCustom :links="breadcrumbLinks" />
           </div>
         </CardContent>
@@ -191,6 +189,4 @@ const breadcrumbLinks = ref([
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -22,6 +22,7 @@ defineShortcuts({
 
 <template>
   <div
+    style="transition: 400ms cubic-bezier(0.25, 1, 0.5, 1)"
     class="grid w-full transition-width duration-300 min-h-dvh"
     :class="
       cn('pl-0 lg:pl-64 sm:pl-20', isOpen ? 'lg:pl-64 sm:pl-20' : 'lg:pl-20')

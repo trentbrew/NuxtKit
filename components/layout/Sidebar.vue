@@ -19,7 +19,8 @@ function resolveNavItemComponent(item: NavLink | NavGroup | NavSectionTitle) {
 
 <template>
   <aside
-    class="inset-y fixed left-0 z-20 hidden h-full flex-col items-center border-r bg-background transition-width duration-300 sm:flex"
+    style="transition: 400ms cubic-bezier(0.25, 1, 0.5, 1)"
+    class="inset-y fixed left-0 z-20 hidden h-full flex-col items-center border-r bg-background transition-width sm:flex"
     :class="cn('w-20 lg:w-64', isOpen ? 'lg:w-64' : 'lg:w-20')"
   >
     <div
